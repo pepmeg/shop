@@ -61,8 +61,6 @@ class NewArrivals extends StatelessWidget {
                           ? Image.network(
                         product.imageUrl!,
                         fit: BoxFit.contain,
-                        errorBuilder: (context, error, stackTrace) =>
-                        const Icon(Icons.error),
                       )
                           : const Icon(Icons.image, size: 50),
                     ),

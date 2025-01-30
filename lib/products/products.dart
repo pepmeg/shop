@@ -50,25 +50,26 @@ class _Product1State extends State<Products> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    width: 343.0,
-                    height: 323.0,
-                    margin: const EdgeInsets.only(left: 14.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage(widget.product.imageUrl ?? 'https://i.ibb.co/4dr0v9x/no-image.png'),
-                        fit: BoxFit.contain,
+                  if (widget.product.imageUrl != null)
+                    Container(
+                      width: 343.0,
+                      height: 323.0,
+                      margin: const EdgeInsets.only(left: 14.0),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(widget.product.imageUrl!),
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
-                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 16.0, top: 26.0, right: 16),
                     child: Text(
                       widget.product.title,
                       style: const TextStyle(
-                          fontSize: 27.0,
-                          color: Colors.black,
-                          fontFamily: 'AG',),
+                        fontSize: 27.0,
+                        color: Colors.black,
+                        fontFamily: 'AG',),
                     ),
                   ),
                   Padding(
@@ -76,9 +77,9 @@ class _Product1State extends State<Products> {
                     child: Text(
                       widget.product.productDescription,
                       style: const TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.grey,
-                          fontFamily: 'DM Sans Bold',),
+                        fontSize: 14.0,
+                        color: Colors.grey,
+                        fontFamily: 'DM Sans Bold',),
                     ),
                   ),
                   Padding(
@@ -86,9 +87,9 @@ class _Product1State extends State<Products> {
                     child: Text(
                       '${widget.product.price} руб.',
                       style: const TextStyle(
-                          fontSize: 27.0,
-                          color: Colors.black,
-                          fontFamily: 'AG',),
+                        fontSize: 27.0,
+                        color: Colors.black,
+                        fontFamily: 'AG',),
                     ),
                   ),
                   const SizedBox(height: 100),
