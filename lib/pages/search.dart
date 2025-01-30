@@ -131,7 +131,7 @@ class _SearchPageState extends State<SearchPage> {
                       TextField(
                         onChanged: _updateSearchQuery,
                         decoration: InputDecoration(
-                          hintText: "Поиск...",
+                          hintText: "Поиск",
                           prefixIcon: const Icon(Icons.search, color: Colors.black),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8.0),
