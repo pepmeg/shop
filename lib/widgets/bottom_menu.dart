@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop/pages/main_activity.dart';
+import '../pages/search.dart';
 
 class BottomNavigationBarWidget extends StatelessWidget {
   const BottomNavigationBarWidget({Key? key}) : super(key: key);
@@ -20,6 +21,15 @@ class BottomNavigationBarWidget extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => MainActivity()),
+                );
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.search, size: 30, color: Colors.black),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SearchPage()),
                 );
               },
             ),

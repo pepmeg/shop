@@ -110,7 +110,7 @@ class _CategoryNotebooksState extends State<CategoryNotebooks> {
                           style: const TextStyle(
                             color: Colors.black,
                             fontSize: 27,
-                            fontFamily: 'AG',
+                            fontFamily: 'AG'
                           ),
                         ),
                       ],

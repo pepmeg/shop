@@ -116,7 +116,7 @@ class _CategoryPhoneState extends State<CategoryPhone> {
                           style: const TextStyle(
                             color: Colors.black,
                             fontSize: 27,
-                            fontFamily: 'AG',
+                            fontFamily: 'AG'
                           ),
                         ),
                       ],

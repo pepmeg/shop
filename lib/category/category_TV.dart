@@ -114,7 +114,7 @@ class _CategoryTVState extends State<CategoryTV> {
                           style: const TextStyle(
                             color: Colors.black,
                             fontSize: 27,
-                            fontFamily: 'AG',
+                            fontFamily: 'AG'
                           ),
                         ),
                       ],
